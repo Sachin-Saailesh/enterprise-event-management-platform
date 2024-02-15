@@ -87,6 +87,8 @@ body {
   left: 0
 }
 
+
+
 .full-screen-portfolio .portfolio-item h1 {
   position: relative;
   font-size: 22px;
@@ -1059,18 +1061,57 @@ h1,
 }
 
 @media screen and (max-width: 768px) {
-  h1 {
+  #main-title {
     font-size: 4em !important;
     /* Adjust font size for smaller screens */
   }
+
+  h1 {
+    font-size: 2.3em !important
+  }
+
+  h4 {
+    font-size: 1.4em !important
+  }
+
+  .flower-img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .flower-img-container {
+    min-height: 350px !important;
+  }
+
+
 }
 
 @media screen and (max-width: 576px) {
-  h1 {
+  #main-title {
     font-size: 2.5em !important;
     /* Adjust font size for even smaller screens */
   }
+
+  h1 {
+    font-size: 1.8em !important;
+  }
+
+  h4 {
+    font-size: 1.2em !important
+  }
+
+  .flower-img {
+    height: 220px;
+    width: 220px;
+  }
+
+  .flower-img-container {
+    min-height: 300px !important;
+  }
+
+
 }
+
 
 
 

@@ -64,11 +64,13 @@ body {
   background-repeat: no-repeat;
 }
 
+
 .col-md-8,
 .full-screen-portfolio .col-md-4 {
   padding-left: 0;
   padding-right: 0
 }
+
 
 .portfolio-item img {
   width: 100%;

@@ -11619,3 +11619,19 @@ h6,
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.testimonial-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #d1914b;
+  /* matches your gold theme */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-icon i {
+  color: #ffffff;
+  font-size: 24px;
+}

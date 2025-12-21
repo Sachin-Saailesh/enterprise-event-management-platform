@@ -28,8 +28,8 @@
             rel="stylesheet">
 
         <!-- BoxStyle Bootstrap -->
-        <link href="css/bootstrapboxstyle.min.css" rel="stylesheet">
-        <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
+        <!-- <link href="css/bootstrapboxstyle.min.css" rel="stylesheet">
+        <link href="ionicons/css/ionicons.min.css" rel="stylesheet"> -->
 
         <link href="css/style.css" rel="stylesheet">
 
@@ -94,6 +94,8 @@
 
             });
         </script>
+
+
 
 
 
@@ -851,29 +853,80 @@
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
-        <!-- JavaScript Libraries -->
+        <!-- jQuery (ONE version only) -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <!-- Bootstrap 4 Bundle (includes Popper) -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Animation / UI libs -->
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Date / Time picker -->
         <script src="lib/tempusdominus/js/moment.min.js"></script>
         <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
         <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-        <!-- Contact Javascript File -->
+        <!-- Form validation -->
         <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
 
-        <!-- Template Javascript -->
+        <!-- Template scripts -->
         <script src="js/main.js"></script>
         <script src="js/animated-headline.js"></script>
 
-        <!--Gallery scripts-->
+        <script>
+            (function () {
+                const navbar = document.getElementById("navbar");
+                if (!navbar) return;
+
+                document.body.addEventListener("scroll", function () {
+                    if (document.body.scrollTop > 400) {
+                        navbar.classList.add("scrolled");
+                    } else {
+                        navbar.classList.remove("scrolled");
+                    }
+                });
+            })();
+        </script>
+
+        <script>
+            (function () {
+                const navbar = document.getElementById("navbar");
+                const $menu = $("#navbarCollapse");
+
+                if (!navbar || !$menu.length) return;
+
+                // When hamburger menu opens
+                $menu.on("show.bs.collapse", function () {
+                    navbar.classList.add("scrolled");
+                });
+
+                // When hamburger menu closes
+                $menu.on("hide.bs.collapse", function () {
+                    // Remove blur only if user has NOT scrolled
+                    if (document.body.scrollTop <= 50) {
+                        navbar.classList.remove("scrolled");
+                    }
+                });
+            })();
+        </script>
+
+
+
+
+
+
+
+
+
+        <!-- Gallery scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
+
 
 
 

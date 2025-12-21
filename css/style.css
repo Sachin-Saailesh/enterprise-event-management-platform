@@ -11731,3 +11731,55 @@ h6,
     padding-bottom: 12px;
   }
 }
+
+/* MOBILE ONLY */
+@media (max-width: 991px) {
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+}
+
+@media (max-width: 991px) {
+  .carousel {
+    margin-top: 70px;
+    /* height of navbar */
+  }
+}
+
+@media (max-width: 991px) {
+
+  #home,
+  .hero,
+  .hero-section {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 991px) {
+  #navbar {
+    background: rgba(43, 28, 23, 0.85);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+}
+
+/* MOBILE ONLY – make hero carousel bigger */
+@media (max-width: 991px) {
+
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+    height: 60vh;
+    /* adjust: 65vh–80vh based on taste */
+  }
+
+  .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
